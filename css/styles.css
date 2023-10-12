@@ -51,11 +51,14 @@ body{
 
 /* Header */
     .hero{
-        background-color: #571845;
-        width: 100%;
         height: 45rem;
         padding: 2% 5%;
+        background-color: #571845;
     }
+        .hero-container{
+            max-width: 140rem;
+            margin: 0 auto;
+        }
 
                     .hero h1,
                     .hero p,
@@ -126,3 +129,8 @@ body{
                     height: 2.5rem;
                     transform: 0.3s;
                 }
+
+.imain{
+    max-width: 140rem;
+    margin: 4rem auto;
+}

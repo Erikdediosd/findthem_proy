@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-VPS5DLMBZE"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-VPS5DLMBZE');
+        </script>
+    <!---->
     <meta charset="UTF-8">
     <meta name="description" value="Landing page about a programming team that creates and develops practice projects.">
     <meta name="author" value="Notcharcoal">
@@ -12,27 +22,29 @@
 </head>
 <body>
     <header class="hero">
-        <nav class="hero__nav">
-            <section class="nav__p1">
-                <a class="p1__button btn-prefix" href="#">Inicio</a>
-                <a class="p1__button btn-prefix" href="#">Opiniones</a>
-                <a class="p1__button btn-prefix" href="#">Especializaciones</a>
-                <a class="p1__button btn-prefix" href="#">Proyectos</a>
+        <div class="hero-container">
+            <nav class="hero__nav">
+                <section class="nav__p1">
+                    <a class="p1__button btn-prefix" href="#">Inicio</a>
+                    <a class="p1__button btn-prefix" href="#">Opiniones</a>
+                    <a class="p1__button btn-prefix" href="#">Especializaciones</a>
+                    <a class="p1__button btn-prefix" href="#">Proyectos</a>
+                </section>
+                
+                <a class="btn-primary btn-prefix" href="#">Ir a Discord</a>
+            </nav>
+    
+            <section class="hero__title">
+                <h1 class="title__p1">Les presentamos</h1>
+                <h1 class="title__p2">Find <span class="title__p2-bold">Them</span></h1>
+                <p>Estamos creando un lugar, donde desarolladores y estudiantes puedan crecer laboralmente.</p>
             </section>
-            
-            <a class="btn-primary btn-prefix" href="#">Ir a Discord</a>
-        </nav>
-
-        <section class="hero__title">
-            <h1 class="title__p1">Les presentamos</h1>
-            <h1 class="title__p2">Find <span class="title__p2-bold">Them</span></h1>
-            <p>Estamos creando un lugar, donde desarolladores y estudiantes puedan crecer laboralmente.</p>
-        </section>
-
-        <section class="hero__btns">
-            <a class="btns__join btn-primary btn-prefix" href="#">Unirse</a>
-            <a class="btns__view btn-prefix" href="#">Ver proyectos <img class="view__icon" src="./imgs/view_proy_icon.png"></a>
-        </section>
+    
+            <section class="hero__btns">
+                <a class="btns__join btn-primary btn-prefix" href="#">Unirse</a>
+                <a class="btns__view btn-prefix" href="#">Ver proyectos <img class="view__icon" src="./imgs/view_proy_icon.png"></a>
+            </section>
+        </div>
     </header>
 
     <main class="imain">
