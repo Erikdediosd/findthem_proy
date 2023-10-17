@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,700;1,400&display=swap');
 
+/* Globales */
 :root{
     --color01: #571845;
     --color02: #900C3E;
@@ -20,6 +21,7 @@ body{
     font-family: 'Montserrat', sans-serif;
 }
 
+/* Font style preset */
     h1{
         font-weight: 700;
         font-size: 3.5rem;
@@ -35,7 +37,7 @@ body{
         font-weight: 300;
         font-size: 1.8rem;
     }
-
+/* Button prefix */
 .btn-prefix{
     padding: 1.2rem 2rem;
     border-radius: 20rem;
@@ -48,6 +50,14 @@ body{
     .btn-prefix:hover{
         scale: 1.12;
     }
+
+/* Other elements prefix*/
+.separator{
+    width: 100%;
+    height: 0.8rem;
+    margin: 1rem auto;
+    background-color: var(--color02);
+}
 
 /* Header */
     .hero{
@@ -132,19 +142,47 @@ body{
 /* Main */
 .imain{
     max-width: 140rem;
-    margin: 4rem auto;
+    margin: 2rem auto;
 }
  .imain__about,
  .imain__projects{
     width: 100%;
-    height: 45rem;
-    background-color: lightblue;
     padding: 2% 5%;
 }
     .imain__about{
-        display: flex;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: 2fr 1fr;
     }
         .about__article{
-            width: 50%;
+            display: flex;
+        }
+            .about__img{
+                justify-content: center;
+                align-items: center;
+            }
+                .about__img svg{
+                    width: 35rem;
+                    height: 35rem;
+                }
+            .about__desc{
+                flex-direction: column;
+                margin-top: 4rem;
+            }
+                .about__desc h2{
+                    align-self: flex-end;
+                }
+    .imain__projects{
+        background-color: var(--color02);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+            .imain__projects h2{
+                margin: 1rem;
+                color: white;
+            }
+
+        .projects__box{
+            height: 30rem;
+            background-color: #FFC300;
         }
