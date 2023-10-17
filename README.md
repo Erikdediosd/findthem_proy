@@ -13,7 +13,7 @@ Esto incluye, por supuesto, el manejo de HTML, CSS y JavaScript, en el caso de d
 Sin nada más que agregar, dejo mi proyecto aquí, algo bastante sencillo de recrear. See ya' boi'.
 
 > **Note**
-> Versión 1.1
+> Versión 1.4
 
 ## (ENG)
 Recently I've been taking a web design and development course for beginners. Although I have some *basic knowledge*, I have put some effort into this project to the point of taking some love for it.
@@ -29,4 +29,4 @@ This includes, of course, the handling of HTML, CSS and JavaScript, in the case 
 Without anything else to add, I leave my project here, something quite simple to recreate. See ya' boi'.
 
 > **Note**
-> Versión 1.3
+> Version 1.4
