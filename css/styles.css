@@ -31,6 +31,10 @@ body{
         font-weight: bold;
         font-size: 2.8rem;
     }
+    
+    h3{
+        font-size: 2.1rem;
+    }
 
     p,
     a{
@@ -45,6 +49,7 @@ body{
     transition: scale 0.3s;
     display: flex;
     align-items: center;
+    text-decoration: none;
 }
 
     .btn-prefix:hover{
@@ -184,5 +189,44 @@ body{
 
         .projects__box{
             height: 30rem;
-            background-color: #FFC300;
+            display: flex;
+            justify-content: space-between;
+            gap: 8rem;
+            margin-top: 2rem;
         }
+
+            .box__img{
+                width: 80%;
+                background-image: url(../imgs/courses_html.png);
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .box__text{
+                align-self: center;
+                display: flex;
+                flex-direction: column;
+                color: white;
+            }
+                .box__text h3{
+                    margin: 0;
+                }
+
+                .box__btn{
+                    align-self: flex-end;
+                    margin: 0 5rem;
+                    color: white;
+                    padding: 0.8rem 2.2rem;
+                }
+                    .box__btn img{
+                        width: 3rem;
+                    }
+
+        .projects__box:nth-child(3) .box__img{
+            background-image: url(../imgs/courses_css.png);
+        }
+
+        .projects__box:nth-child(4) .box__img{
+            background-image: url(../imgs/courses_js.png);
+        }
+        
