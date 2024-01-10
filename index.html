@@ -21,44 +21,104 @@
     <title>Find Them</title>
 </head>
 <body>
-    <header class="header wrapblock">
-        <nav class="header__nav">
-            <a class="nav__index" href="/index.html"><img alt="Icon"></a>
-            <div class="nav__btns">
-                <a href="#">About</a>
-                <a href="#">Projects</a>
-                <a href="#">Partners</a>
-                <a href="#">Platform</a>
-                <a href="#">Contact</a>
-            </div>
-            <button><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
-              </svg></button>
-        </nav>
+    <nav class="navigation">
+        <button class="circular-button-prefix nav__index">
+            <img src="/imgs/FindThemLogo.png" alt="Icon">
+        </button>
+        <div class="nav__btns">
+            <a href="#">About</a>
+            <a href="#">Projects</a>
+            <a href="#">Partners</a>
+            <a href="#">Platform</a>
+            <a href="#">Contact</a>
+        </div>
+        <button onclick="toggleMenu()" class="nav__search"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: msFilter;"><path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path></svg></button>
+    </nav>
+    <header class="header">
         <section class="header__title">
-            <h1 class="title">Welcome to <br>
-                <span class="titleanim">Find Them</span>
+            <h2>Welcome to</h2>
+            <h1 class="stack" style="--stacks: 3;">
+                <span style="--index: 0;">Find Them</span>
+                <span style="--index: 1;">Find Them</span>
+                <span style="--index: 2;">Find Them</span>
             </h1>
-            <img src="#" alt="Find Them Logotype">
+            <p>We are a community that seeks to help students and programmers grow academically and professionally.</p>
         </section>
 
         <div class="header__cards">
             <article class="headercards__card">
-                <h2>Example Text</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus rerum voluptates vel adipisci culpa? Iusto labore necessitatibus repellat vel similique hic voluptas nulla quo, eveniet, sapiente, culpa consequuntur amet quam.</p>
-                <a href="#">View More</a>
+                <h2>Mission</h2>
+                <p>To provide an efficient space and the necessary tools to students and developers to develop diverse programming projects.</p>
+                <a class="mid-large-button-prefix" href="#">View More</a>
             </article>
             <article class="headercards__card">
-                <h2>Example Text</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus rerum voluptates vel adipisci culpa? Iusto labore necessitatibus repellat vel similique hic voluptas nulla quo, eveniet, sapiente, culpa consequuntur amet quam.</p>
-                <a href="#">View More</a>
+                <h2>Vision</h2>
+                <p>To be a global programming platform that fosters a safe and equitable environment, encouraging developers to work, learn, and collaborate for their personal and professional development.</p>
+                <a class="mid-large-button-prefix" href="#">View More</a>
             </article>
             <article class="headercards__card">
-                <h2>Example Text</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus rerum voluptates vel adipisci culpa? Iusto labore necessitatibus repellat vel similique hic voluptas nulla quo, eveniet, sapiente, culpa consequuntur amet quam.</p>
-                <a href="#">View More</a>
+                <h2>Values</h2>
+                <p>To be a respectful and fair, non-profit community that fosters collaborative work, learning, efficiency, and work/personal development.</p>
+                <a class="mid-large-button-prefix" href="#">View More</a>
             </article>
         </div>
     </header>
+    <section class="platform wrapblock">
+        <div class="platform__block platform__info">
+            <h2 class="platform__title">How we <br><span>work</span></h2>
+            <p class="black-text">Our policies are somewhat lax in several aspects, and while we always maintain some leeway for each project, we try to offer a fair and safe space for each developer.</p>
+        </div>
+        
+        <div class="platform__block platform__processes">
+            <article class="process">
+                <div class="process__titlecont">
+                    <div class="titlecont__num">1</div>
+                    <h3 class="black-text">Propose a Project</h3>
+                </div>
+                <p class="black-text">It can be a landing page, a database, a videogame mod or something like that.</p>
+            </article>
+            <article class="process">
+                <div class="process__titlecont">
+                    <div class="titlecont__num">2</div>
+                    <h3 class="black-text">Define certain policies</h3>
+                </div>
+                <p class="black-text">Things like "for-profit or non-profit projects", number of members, category or the minimum level of prior knowledge required.</p>
+            </article>
+            <article class="process">
+                <div class="process__titlecont">
+                    <div class="titlecont__num">3</div>
+                    <h3 class="black-text">Member Search</h3>
+                </div>
+                <p class="black-text">Through Discord, we help you to find members interested in participating according to the requirements of your project.
+                </p>
+            </article>
+            <article class="process">
+                <div class="process__titlecont">
+                    <div class="titlecont__num">4</div>
+                    <h3 class="black-text">A suitable space</h3>
+                </div>
+                <p class="black-text">In our server, we assign you a category and specific channels according to your needs.</p>
+            </article>
+            <article class="process">
+                <div class="process__titlecont">
+                    <div class="titlecont__num">5</div>
+                    <h3 class="black-text">Help and Advice</h3>
+                </div>
+                <p class="black-text">If requested, we can support you with some suggestions/advice in any area, be it administration, task distribution or more technical parts of the code.
+                </p>
+            </article>
+        </div>
+        <div class="platform__discord">
+            <div class="discord__info">
+                <h2 class="black-text">Our Discord</h2>
+                <p class="black-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde, dignissimos, officia aliquam dolores repudiandae, quasi ducimus dicta ad fugiat distinctio assumenda reprehenderit nihil voluptates. Quo odit necessitatibus quasi quae nam!</p>
+            </div>
+            <div class="discord__imgwrapper">
+                <object data="/imgs/DiscordInterface.svg"></object>
+                <object data="/imgs/DiscordIcon.svg"></object>
+            </div>
+        </div>
+    </section>
+    <script src="/prueba.js"></script>
 </body>
 </html>
