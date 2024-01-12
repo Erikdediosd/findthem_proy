@@ -98,14 +98,13 @@ p{
 /* Navigation */
 .navigation{
     width: 100%;
-    padding: 2%;
+    padding: 5rem 6%;
     display: flex;
     justify-content: space-between;
     position: fixed;
     z-index: 3;
 }
-    .nav__index,
-    .nav__search{
+    .nav__index{
         width: 4rem;
         height: 4rem;
     }
@@ -113,25 +112,97 @@ p{
             width: 100%;
             height: 100%;
         }
-    .nav__btns {
-        display: none;
+    .nav__burgermenu{
+        display: block;
+        width: 4rem;
+        height: 4rem;
+        position: relative;
+        transition: 0.3s ease;
     }
-        .nav__btns.show {
-            height: 50vh;
-            width: 100%;
-            background-color: var(--btn-sec);
-            padding: 4rem;
-            display: flex;
-            position: absolute;
-            justify-content: space-between;
-            flex-direction: column;
-        }
-            .nav__btns a{
-                display: flex;
-                justify-content: center;
+            .nav__burgermenu::before,
+            .nav__burgermenu::after{
+                content: '';
+                background-color: white;
                 width: 100%;
+                height: 0.5rem;
+                position: absolute;
+                transition: 0.3s ease;
+                border-radius: 1rem;
+            }
+
+            .nav__burgermenu::before{
+                top: 0;
+            }
+
+            .nav__burgermenu::after{
+                bottom: 0;
+            }
+        .nav__burgermenu span{
+            background-color: white;
+            position: absolute;
+            width: 100%;
+            height: 0.5rem;
+            top: 1.7rem;
+            border-radius: 1rem;
+            transition: 0.3s ease;
+        }
+        .nav__list{
+            position: absolute;
+            top: 0;
+            right: 0;
+            opacity: 0;
+            list-style: none;
+            transition: 0.3s ease;
+            scale: 0.5;
+        }
+            .list__item{
                 color: white;
                 text-decoration: none;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transition: 0.3s ease;
+            }
+        .nav__list.active{
+            top: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+            padding: 5rem 6%;
+            right: 6%;
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            gap: 5vh;
+            background-color: var(--dark-color);
+            opacity: 1;
+            transition: 0.3s ease;
+            scale: 1;
+        }
+            .nav__list.active .list__item{
+                width: 100%;
+                height: 6rem;
+                color: white;
+                transition: 0.3s ease;
+            }
+        .nav__burgermenu.active{
+            z-index: 3;
+            transition: 0.3s ease;
+        }
+            .nav__burgermenu.active::before{
+                transform: rotate(45deg);
+                transition: 0.3s;
+                top: 1.75rem;
+            }
+            .nav__burgermenu.active::after{
+                transform: rotate(-45deg);
+                transition: 0.3s;
+                bottom: 1.75rem;
+            }
+            .nav__burgermenu.active span{
+                transform: rotate(-45deg);
+                transition: 0.3s;
+                opacity: 0;
             }
 
 /* Header */

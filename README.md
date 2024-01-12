@@ -29,4 +29,4 @@ Esto incluye, por supuesto, el manejo de HTML, CSS y JavaScript, en el caso de d
 Sin nada más que agregar, dejo mi proyecto aquí, algo bastante sencillo de recrear. See ya' boi'.
 
 > **Note**
-> Version 1.7
+> Version 1.8

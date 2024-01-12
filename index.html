@@ -22,17 +22,19 @@
 </head>
 <body>
     <nav class="navigation">
-        <button class="circular-button-prefix nav__index">
+        <a class="circular-button-prefix nav__index">
             <img src="/imgs/FindThemLogo.png" alt="Icon">
-        </button>
-        <div class="nav__btns">
-            <a href="#">About</a>
-            <a href="#">Projects</a>
-            <a href="#">Partners</a>
-            <a href="#">Platform</a>
-            <a href="#">Contact</a>
+        </a>
+        <ul class="nav__list">
+            <li class="list__item" href="#">About</li>
+            <li class="list__item" href="#">Projects</li>
+            <li class="list__item" href="#">Partners</li>
+            <li class="list__item" href="#">Platform</li>
+            <li class="list__item" href="#">Contact</li>
+        </ul>
+        <div class="nav__burgermenu">
+            <span></span>
         </div>
-        <button onclick="toggleMenu()" class="nav__search"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: msFilter;"><path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path></svg></button>
     </nav>
     <header class="header">
         <section class="header__title">
@@ -119,6 +121,6 @@
             </div>
         </div>
     </section>
-    <script src="/prueba.js"></script>
+    <script src="/script.js"></script>
 </body>
 </html>
