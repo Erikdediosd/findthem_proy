@@ -29,7 +29,8 @@ body{
 h1{
     font-weight: 700;
 }
-h2{
+h2,
+legend{
     font-weight: 600;
     font-size: 2.6rem;
 }
@@ -48,7 +49,9 @@ h1,
 h2,
 h3,
 h4,
-p{
+p,
+label,
+legend{
     color: white;
 }
 /* Utility */
@@ -95,6 +98,16 @@ p{
         border: 0.2rem var(--btn-prim) solid;
         color: black;
     }
+        .inversehover{
+            background-color: var(--btn-prim);
+            border: 0.2rem var(--btn-prim) solid;
+            color: black;
+        }
+            .inversehover:hover{
+                background-color: var(--white-st);
+                border: 0.2rem white solid;
+                color: white;
+            }
 /* Navigation */
 .navigation{
     width: 100%;
@@ -357,27 +370,6 @@ p{
                     color: white;
                     font-weight: 800;
                 }
-
-                @media (min-width:768px){
-                    .header__cards{
-                        display: flex;
-                        flex-direction: row;
-                        justify-content: space-around;
-                    }
-
-                    .headercards__card{
-                        width: 33.3%;
-                    }
-
-                    .platform__processes{
-                        grid-template-rows: repeat(3, 1fr);
-                        grid-template-columns: 1fr 1fr;
-                        
-                    }
-                        .process:nth-child(5){
-                            grid-column: 1 / 3;
-                        }
-                }
     .platform__discord{
         display: flex;
         flex-direction: column;
@@ -419,3 +411,89 @@ p{
                     opacity: 0.9;
                 }
             }
+
+/* FORM SECTION*/
+.formsect{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(/imgs/pexels-kevin-ku-577585.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+    .formcont{
+        backdrop-filter: blur(0.8rem);
+        padding: 6%;
+        width: 75vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border-radius: 1.6rem;
+        gap: 2.4rem;
+    }
+        .formcont legend{
+            align-self: flex-start;
+        }
+        .formcont button{
+            width: 75%;
+        }
+        .form__sections{
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 1.6rem;
+        }
+            .form__section{
+                display: flex;
+                flex-direction: column;
+                gap: 0.8rem;
+            }
+                .form__section input{
+                    padding: 0.8rem;
+                    border-radius: 1.6rem;
+                }
+            .form__othersect{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                gap: 0.8rem;
+            }
+                .othersect__btns{
+                    display: flex;
+                    gap: 2rem;
+                }
+                .othersect__btn{
+                    max-width: 4.8rem;
+                    max-height: 4.8rem;
+                }
+                @media (min-width:768px){
+                    .header__cards{
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-around;
+                    }
+
+                    .headercards__card{
+                        width: 33.3%;
+                    }
+
+                    .platform__processes{
+                        grid-template-rows: repeat(3, 1fr);
+                        grid-template-columns: 1fr 1fr;
+                        
+                    }
+                        .process:nth-child(5){
+                            grid-column: 1 / 3;
+                        }
+                    .form__sections{
+                        display: grid;
+                        grid-template-columns: 1fr 1fr;
+                    }
+                        .form__section:nth-child(1),
+                        .form__section:nth-child(2){
+                            grid-column: 1 / 3;
+                        }
+                }
