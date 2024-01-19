@@ -69,7 +69,7 @@
     </header>
     <section class="platform wrapblock lightbg-container" id="section2">
         <div class="platform__info">
-            <h2 class="platform__title">How we <br><span>work</span></h2>
+            <h2>How we work</h2>
             <p class="black-text">Our policies are somewhat lax in several aspects, and while we always maintain some leeway for each project, we try to offer a fair and safe space for each developer.</p>
             <a href="#" class="min-style-button">View More <i class="bi bi-arrow-right"></i></a>
         </div>
@@ -108,7 +108,7 @@
         </div>
     </section>
     <section class="projects wrapblock lightbg-container" id="section3">
-        <div class="projects__titlewrap">
+        <div class="projects__title">
             <h2>View our projects</h2>
             <a href="#" class="min-style-button">View More <i class="bi bi-arrow-right"></i></a>
         </div>
@@ -143,8 +143,28 @@
             <object data="/imgs/DiscordIcon.svg"></object>
         </div>
     </section>
+    <section class="questions wrapblock">
+        <div class="questions__info">
+            <h2>Frequently asked questions</h2>
+            <p class="black-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corrupti, animi quae iure dolorem ipsam facere?</p>
+            <a href="#" class="min-style-button">Contact us for more info</a>
+        </div>
+        <div class="questions__qgrids">
+            <article class="qgrid__qelement">
+                <div class="qelement__num">01</div>
+                <div class="qelement__info">
+                    <h3 class="black-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                    <p class="black-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora omnis, optio excepturi fugiat aliquam ab ratione non suscipit et doloremque dolor quasi facilis laborum est, veniam reprehenderit distinctio quod! Ullam.</p>
+                </div>
+                <div class="qelement__icon">
+                    <span></span>
+                    <span></span>
+                </div>
+            </article>
+        </div>
+    </section>
     <section class="formsect wrapblock" id="section5">
-        <form class="formcont">
+        <form class="formcont" action="form.php" method="post">
             <h2>Join us now!</h2>
             <div class="form__sections">
                 <div class="form__section">
